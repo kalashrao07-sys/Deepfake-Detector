@@ -1,14 +1,13 @@
-# Force all JavaScript files inside the React src folder to show as JSX
-frontend/src/**/*.js linguist-language=JSX
+# Force React components to register as JSX (React)
+frontend/src/components/*.js linguist-language=JSX
+frontend/src/pages/*.js linguist-language=JSX
+frontend/src/App.js linguist-language=JSX
+frontend/src/index.js linguist-language=JSX
 
-# Ensure backend remains strictly flagged as JavaScript
+# Keep backend and shared API logic mapped as native JavaScript
 backend/**/*.js linguist-language=JavaScript
+frontend/src/services/*.js linguist-language=JavaScript
 
-# Exclude your SQL dump and structural documents from counting
+# Exclude documents from code metrics
 database.sql linguist-documentation
-
-# Fix the CSS Bloat: Treat styling dependencies and build artifacts as vendored code
-**/node_modules/** linguist-vendored
-**/build/** linguist-vendored
-**/dist/** linguist-vendored
-frontend/src/index.css linguist-vendored
+README.md linguist-documentation
