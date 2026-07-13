@@ -1,0 +1,65 @@
+# ====================================================================
+# 1. Dependency Folders (Never commit these; they are re-downloaded)
+# ====================================================================
+node_modules/
+jspm_packages/
+web_modules/
+.pnpm-store/
+vendor/
+
+# ====================================================================
+# 2. Security, Environment, and Secrets (CRITICAL for security)
+# ====================================================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+certs/
+
+# ====================================================================
+# 3. Build Outputs and Distribution Folders
+# ====================================================================
+dist/
+build/
+out/
+.next/
+.nuxt/
+.docusaurus/
+*.egglib/
+
+# ====================================================================
+# 4. Logs, Caches, and Diagnostics
+# ====================================================================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.eslintcache
+.stylelintcache
+.turbo/
+.cache/
+
+# ====================================================================
+# 5. IDE, Code Editor, and Tool Settings
+# ====================================================================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# ====================================================================
+# 6. Operating System Specific Files
+# ====================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
