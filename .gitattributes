@@ -1,0 +1,4 @@
+# Only treat JavaScript files inside the frontend folder as React JSX
+frontend/**/*.js linguist-language=JSX
+
+# Keep backend files classified as normal JavaScript automatically
