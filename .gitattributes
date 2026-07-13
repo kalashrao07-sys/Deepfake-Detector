@@ -1,4 +1,8 @@
-# Only treat JavaScript files inside the frontend folder as React JSX
-frontend/**/*.js linguist-language=JSX
+# Force all JavaScript files inside the React src folder to show as JSX
+frontend/src/**/*.js linguist-language=JSX
 
-# Keep backend files classified as normal JavaScript automatically
+# Ensure backend remains strictly flagged as JavaScript 
+backend/**/*.js linguist-language=JavaScript
+
+# Exclude your SQL dump and structural documents from counting
+database.sql linguist-documentation
