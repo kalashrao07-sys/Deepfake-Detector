@@ -212,7 +212,7 @@ The system uses a **rule-based scoring algorithm** to simulate AI detection:
 
 ---
 
-## 📝 Viva Explanation Points
+## 📝 FYQs
 
 1. **Why simulated AI?** — Real deepfake detection requires massive training datasets and GPU. For a mini-project, rule-based scoring demonstrates the concept effectively.
 
